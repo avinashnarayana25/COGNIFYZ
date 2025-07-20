@@ -1,0 +1,68 @@
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Background Colors for each section */
+.color-changer {
+    background-color: black;
+}
+.time-alert {
+    background-color: deepskyblue; 
+}
+.number-calculator {
+    background-color: forestgreen; 
+}
+
+.container {
+    padding: 20px;
+    border: 2px solid purple; /* Neon purple border */
+    box-shadow: 0 0 5px purple, 0 0 15px purple; /* for Glowing effect */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    background: azure; 
+}
+
+button {
+    background-color: green; /* Initial color set to green */
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: darkgreen;
+}
+
+input[type="number"] {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    width: 80%;
+}
+
+/* Result display */
+#calculationResult h2 {
+    color: red; 
+    font-size: 24px;
+}

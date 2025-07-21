@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 - Task 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <style>
+        .card-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card-content {
+            text-align: center;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .card-body {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #555; 
+        }
+        /* Background and shadow styling for cards */
+        .card {
+            background-color: lavender; 
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.1); 
+        }
+    </style>
+</head>
+<body>
+    <!-- Main section containing the card layout -->
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Level 2 - Task 1</h1>
+            <!-- Responsive grid layout for cards -->
+            <div class="columns is-multiline">
+                <!-- Individual card -->
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Assets/amazon card.webp" alt="Amazon">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Amazon Essentials</h2>
+                            <p class="card-body">Browse our selection of quality products for the entire family.</p>
+                            <!-- Link opens in a new tab for better user experience -->
+                            <a href="https://www.amazon.com" class="button is-primary" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for each additional card with similar structure -->
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Assets/flipkart.jpg" alt="Flipkart">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Flipkart Offers</h2>
+                            <p class="card-body">Unlock exciting offers and enjoy savings on a wide range of products.</p>
+                            <a href="https://www.flipkart.com" class="button is-primary" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Assets/myntra logo.webp" alt="Myntra">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Myntra Fashion</h2>
+                            <p class="card-body">Step into style with the latest trends in fashion and accessories.</p>
+                            <a href="https://www.myntra.com" class="button is-primary" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="Assets/olx logo.png" alt="OLX">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">OLX Market</h2>
+                            <p class="card-body">Connect locally to buy or sell goods with ease and reliability.</p>
+                            <a href="https://www.olx.com" class="button is-primary" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

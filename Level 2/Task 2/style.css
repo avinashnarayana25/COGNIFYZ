@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: darkslategray;
+    background: lavenderblush;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: teal;
+    padding: 1rem;
+    color: mintcream;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide menu icon by default and only display in mobile view */
+#menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+/* Navigation  */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: mintcream;
+    display: block;
+}
+
+#main-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, deepskyblue, tomato);
+}
+
+#main-content h1 {
+    font-size: 2.5rem;
+    color: mintcream;
+    text-shadow: 2px 2px black;
+}
+
+span.highlight {
+    color: lightpink;
+}
+
+@media (max-width: 768px) {
+    /* Display hamburger menu in mobile view */
+    #menu-icon {
+        display: block;
+    }
+
+    /* Vertical layout for navigation items in mobile */
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none; /* Hidding by default */
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+}
